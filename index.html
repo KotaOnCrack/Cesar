@@ -21,12 +21,12 @@
   <script>
     // Codes attendus
     const code1 = "tryhard"; // Premier code après décryptage
-    const code2 = "je suis prêt pour le réel défi"; // Deuxième code
+    const code2 = "pas mal"; // Deuxième code
 
     function validateCode1() {
       if (document.getElementById("code1").value.trim().toLowerCase() === code1) {
         document.getElementById("step2").classList.remove("hidden");
-        document.getElementById("secretLink").href = atob("aHR0cHM6Ly9wYXN0ZWJpbi5jb20vVFBuMGpaaEw="); // Lien obfusqué
+        document.getElementById("secretLink").href = atob("aHR0cHM6Ly9wYXN0ZWJpbi5jb20vc1IxMmdKWkY="); // Lien obfusqué
       }
     }
 
