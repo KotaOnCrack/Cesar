@@ -3,10 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Site</title>
+  <title>César</title>
+  <style>
+    .hidden { display: none; }
+  </style>
 </head>
 <body>
-  <h1>Bienvenue sur mon site !</h1>
-  <p>Ce site est hébergé sur GitHub Pages.</p>
+  <input type="text" id="code1" placeholder="gFrgh Fhvdu">
+  <button onclick="validateCode1()">.</button>
+  
+  <div id="step2" class="hidden">
+    <a id="secretLink" href="#">https://pastebin.com/TPn0jZhL</a>
+    <input type="text" id="code2">
+    <button onclick="validateCode2()">.</button>
+  </div>
+
+  <script>
+    const code1 = "tryhard"; // Premier code après décryptage
+    const code2 = "j e   s u i s   p r � � t   p o u r   l e   r � � e l   d � � f i "; // Deuxième code attendu
+
+    function validateCode1() {
+      if (document.getElementById("code1").value === code1) {
+        document.getElementById("step2").classList.remove("hidden");
+      }
+    }
+
+    function validateCode2() {
+      if (document.getElementById("code2").value === code2) {
+        alert("Envois tarte sur discord");
+      }
+    }
+  </script>
+
 </body>
 </html>
